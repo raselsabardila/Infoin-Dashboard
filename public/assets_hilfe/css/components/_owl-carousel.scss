@@ -1,0 +1,38 @@
+.owl-carousel {
+    .owl-nav {
+        display: none !important;
+    }
+
+    @include media-breakpoint-up(lg) {
+        .owl-nav {
+            display: block !important;
+
+            .nav-btn {
+                position: absolute;
+                cursor: pointer;
+                width: 50px;
+                height: 50px;
+                padding: 12px;
+                top: 190px !important;
+                background-color: $colorPrimary;
+                transition: 0.25s;
+
+                &:hover {
+                    background-color: $colorPrimaryTrans;
+                }
+
+                svg {
+                    color: white;
+                }
+            }
+
+            .prev-slide {
+                left: -33px;
+            }
+
+            .next-slide {
+                right: -33px;
+            }
+        }
+    }
+}

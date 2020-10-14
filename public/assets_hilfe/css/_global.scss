@@ -1,0 +1,22 @@
+body {
+    font-family: $poppins;
+    font-weight: 400;
+    height: 2000px;
+}
+
+section {
+    margin-top: 100px;
+}
+
+h1 {
+    color: $fontPrimary;
+
+    span {
+        color: $colorSecondary;
+    }
+}
+
+p {
+    color: $fontSecondary;
+    line-height: 24px;
+}

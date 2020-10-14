@@ -1,0 +1,9 @@
+.btn-main {
+    @include button-variant($btnPrimary, $btnPrimary);
+    line-height: 1;
+    transition: 0.25s;
+}
+
+.btn-secondary {
+    @include button-variant($colorSecondary, $colorSecondary);
+}

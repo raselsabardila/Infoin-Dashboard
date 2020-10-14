@@ -1,0 +1,33 @@
+nav {
+    font-family: $montserrat;
+    font-weight: 600;
+    color: black;
+
+    .nav-item {
+        &:last-child {
+            @include media-breakpoint-up(lg) {
+                margin-top: -5px;
+            }
+        }
+    }
+
+    .nav-item.active {
+        .nav-link {
+
+            &::after {
+                content: "";
+                display: block;
+                width: 30px;
+                height: 2px;
+                border-radius: 10px;
+                background: #000;
+            }
+        }
+    }
+
+    .nav-link {
+        font-size: 18px;
+        margin: 0 10px;
+    }
+
+}

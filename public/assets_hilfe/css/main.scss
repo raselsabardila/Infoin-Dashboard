@@ -1,0 +1,14 @@
+// Import Bootstrap 4 Library
+@import "../vendor/bootstrap/scss/bootstrap.scss";
+
+@import "fonts";
+@import "colors";
+@import "global";
+
+@import "pages/home";
+
+@import "components/navbar";
+@import "components/hero-title";
+@import "components/owl-carousel";
+@import "components/button";
+@import "components/footer";

@@ -1,0 +1,278 @@
+body {
+    font-family: 'Baloo 2', cursive;
+}
+
+/* Navbar */
+
+.navbar {
+    position: relative;
+    z-index: 10;
+    color: white !important;
+}
+
+.btn-menu {
+    background: none;
+    border: 0px;
+    cursor: pointer;
+}
+
+.btn-menu .line.line-1 {
+    width: 30px;
+}
+
+.btn-menu .line.line-2 {
+    width: 25px;
+}
+
+.btn-menu .line.line-3 {
+    width: 35px;
+}
+
+.btn-menu .line {
+    height: 3px;
+    min-width: 20px;
+    margin: 7px;
+    background-color: white;
+}
+
+.btn-menu:hover .line {
+    animation: memanjang 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes memanjang {
+    from {
+        min-width: 20px;
+    }
+
+    to {
+        min-width: 35px;
+    }
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+}
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #ffffffbb;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+
+.sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #474747;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    color: #41C5EA;
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    left: -50px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidebar {
+        padding-top: 15px;
+    }
+
+    .sidebar a {
+        font-size: 18px;
+    }
+}
+
+/* Jumbotron */
+
+.jumbotron {
+    position: relative;
+    z-index: 1;
+    background-image: url(img/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 0 0 10% 10%;
+    color: white;
+    margin-top: -100px;
+}
+
+.jumbotron::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    border-radius: 0 0 10% 10%;
+    background-color: rgba(65, 197, 234, 0.20);
+}
+
+.jumbotron h1 {
+    text-shadow: 0 4px 6px rgba(0, 0, 0, 0.16);
+    font-weight: 600;
+    font-size: 2.5em;
+}
+
+/* Post */
+
+.heading-post h2 {
+    color: #30435A;
+    font-weight: 600;
+}
+
+.heading-post a {
+    color: #9A9A9A;
+}
+
+.post .card {
+    transition: 0.25s;
+}
+
+.post .card:hover {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.post .card a img {
+    transition: 0.25s;
+}
+
+.post .card:hover a img {
+    opacity: 0.8;
+}
+
+.post .card a h5 {
+    color: #474747;
+    font-weight: 500;
+    font-size: 1.5em;
+}
+
+.post .card a h5:hover,
+.post .card p a {
+    color: #686868;
+}
+
+.post .card p {
+    color: #818181;
+}
+
+.post .card p a {
+    color: #474747;
+    font-weight: 500;
+}
+
+.post .pagination li a {
+    color: #B2B2B2;
+}
+
+.post .pagination li a.active {
+    color: #30435A;
+    font-weight: 500;
+}
+
+/* Detail Post */
+.jumbotron .author p a {
+    color: #FFFFFF;
+    font-weight: 500;
+}
+
+.detail-post .share-comment p {
+    color: #474747;
+}
+
+.detail-post .share-comment a {
+    color: #B2B2B2;
+    transition: 0.25s;
+}
+
+.detail-post .share-comment a:hover {
+    color: #41C5EA;
+}
+
+.detail-post .breadcrumb-detail-post {
+    color: #6C6E6E;
+    font-weight: 500;
+}
+
+.detail-post .breadcrumb-detail-post a {
+    color: #6C6E6E;
+}
+
+.detail-post .detail-post-content {
+    color: #6C6E6E;
+}
+
+/* Komentar & Related Post */
+
+.related-post {
+    background-color: #F9F9F9;
+}
+
+
+.komentar .komentar-item {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.16) !important;
+}
+
+.komentar .author-name p {
+    color: #333333;
+    font-size: 1.2em;
+}
+
+.komentar .author-name small {
+    color: #6C6E6E;
+    font-size: .95em;
+}
+
+.komentar a {
+    color: #6C6E6E;
+}
+
+.komentar .form-group input,
+.komentar .form-group textarea {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+.komentar .form-group input::-webkit-input-placeholder,
+.komentar .form-group textarea::-webkit-input-placeholder {
+    color: #C5C5C5;
+}
+
+.komentar button {
+    background-color: #41C5EA;
+}
+
+.komentar button:hover {
+    background-color: #3aafcf;
+}
+
+#box-title-article{
+    margin-left: 120px;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+
+    #box-title-article{
+        margin-left: 0px;
+    }
+
+}

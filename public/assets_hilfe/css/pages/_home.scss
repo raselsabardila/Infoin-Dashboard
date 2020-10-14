@@ -1,0 +1,121 @@
+.page-home {
+    .jumbotron {
+        .container {
+            background-position: right top,
+                left;
+            background-repeat: no-repeat,   
+                no-repeat;
+        }
+
+        h1 {
+            font-weight: 500;
+            text-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+        }
+
+        .input-search {
+            width: 100%;
+            color: $fontSecondary;
+            padding: 10px 20px;
+            background: rgb(241, 241, 241);
+            border: 10px solid white;
+
+            @include media-breakpoint-up(md) {
+                width: 75%;
+            }
+        }
+    }
+
+    .recent-posts {
+        .card {
+            border: 5px solid white;
+            border-radius: 20px;
+
+            .thumbnail-post {
+                img {
+                    border-radius: 20px;
+                }
+            }
+
+            .badge-main {
+                @include badge-variant($colorPrimary);
+                transition: 0.25s;
+
+                &:hover {
+                    background-color: $colorPrimaryTrans;
+                }
+            }
+
+            .media {
+                .media-header {
+                    transition: 0.25s;
+
+                    &:hover {
+                        opacity: 0.8;
+                    }
+
+                    img {
+                        width: 54px;
+                    }
+                }
+
+                .media-body {
+                    a {
+                        text-decoration-color: $fontPrimary;
+
+                        h5 {
+                            font-size: 1em;
+                            color: $fontPrimary;
+                        }
+                    }
+
+                    span {
+                        font-size: 0.9em;
+                        color: $fontSecondary;
+                    }
+                }
+            }
+        }
+    }
+
+    .old-posts {
+        .card {
+            border-radius: 25px;
+
+            .card-thumbnail {
+                position: relative;
+                min-height: 200px;
+                background-size: cover;
+                background-position: center;
+                object-fit: cover;
+                border-top-left-radius: 25px;
+                border-top-right-radius: 25px;
+
+                &::after {
+                    content: "";
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    background: rgba(0, 0, 0, .4);
+                    top: 0;
+                    left: 0;
+                    position: absolute;
+                    border-top-left-radius: 25px;
+                    border-top-right-radius: 25px;
+                }
+
+                h5 {
+                    position: absolute;
+                    z-index: 1;
+                    color: white;
+                    line-height: 24px;
+                }
+            }
+
+
+
+            h6 {
+                color: $fontPrimary;
+            }
+        }
+    }
+}
